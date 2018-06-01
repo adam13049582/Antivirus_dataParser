@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="jsoup-1.11.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/jsoup-1.11.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/UCanAccess-4.0.2-bin/ucanaccess-4.0.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/UCanAccess-4.0.2-bin/lib/jackcess-2.1.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/UCanAccess-4.0.2-bin/lib/hsqldb.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/UCanAccess-4.0.2-bin/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/UCanAccess-4.0.2-bin/lib/commons-lang-2.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/postgresql-42.2.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/pdfbox-app-2.0.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

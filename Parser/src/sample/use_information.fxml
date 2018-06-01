@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="tlo" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="550.0" prefWidth="1600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Statistic">
+   <children>
+      <Label alignment="CENTER" layoutX="638.0" layoutY="32.0" text="What would you find?" textAlignment="CENTER" textFill="#a81e1e">
+         <font>
+            <Font name="Courier New Bold" size="27.0" />
+         </font></Label>
+      <CheckBox fx:id="firewall" layoutX="56.0" layoutY="147.0" mnemonicParsing="false" text="firewall" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="malware" layoutX="56.0" layoutY="181.0" mnemonicParsing="false" text="malware" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></CheckBox>
+      <Label layoutX="56.0" layoutY="94.0" text="Choose criteria:" textFill="#a81e1e">
+         <font>
+            <Font name="Courier New Bold" size="24.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="anti" layoutX="206.0" layoutY="219.0" mnemonicParsing="false" text="anti-spam" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="real" layoutX="206.0" layoutY="185.0" mnemonicParsing="false" text="real-time" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="browsing" layoutX="206.0" layoutY="151.0" mnemonicParsing="false" text="browsing" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="backup" layoutX="56.0" layoutY="328.0" mnemonicParsing="false" text="backup" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="ransomware" layoutX="56.0" layoutY="287.0" mnemonicParsing="false" text="ransomware" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="http" layoutX="56.0" layoutY="251.0" mnemonicParsing="false" text="http monitor" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="parental" layoutX="56.0" layoutY="215.0" mnemonicParsing="false" text="parental control" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="data" layoutX="206.0" layoutY="332.0" mnemonicParsing="false" text="data loss prevention" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="wifi" layoutX="206.0" layoutY="291.0" mnemonicParsing="false" text="wi-fi security" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="password" layoutX="206.0" layoutY="255.0" mnemonicParsing="false" text="password" textFill="#d10e45">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="back" layoutX="60.0" layoutY="470.0" mnemonicParsing="false" onAction="#back" prefHeight="36.0" prefWidth="66.0" style="-fx-background-color: yellow;" text="Back" textFill="#0d0ab9" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="use" layoutX="144.0" layoutY="381.0" mnemonicParsing="false" onAction="#use" prefHeight="45.0" prefWidth="125.0" style="-fx-background-color: orange;" text="Search" textFill="#0d0ab9">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="result" editable="true" layoutX="436.0" layoutY="155.0" prefHeight="200.0" prefWidth="1128.0" AnchorPane.rightAnchor="36.0">
+        <columns>
+          <TableColumn fx:id="cname" prefWidth="75.0" text="name" />
+          <TableColumn fx:id="cversion" prefWidth="75.0" text="version_of_data" />
+            <TableColumn fx:id="cdate" prefWidth="75.0" text="date" />
+            <TableColumn fx:id="cfirewall" prefWidth="75.0" text="firewall" />
+            <TableColumn fx:id="cmalware" prefWidth="75.0" text="malware" />
+            <TableColumn fx:id="cparental" prefWidth="75.0" text="parental control" />
+            <TableColumn fx:id="chttp" prefWidth="75.0" text="http monitor" />
+            <TableColumn fx:id="cransomware" prefWidth="75.0" text="ransomwere" />
+            <TableColumn fx:id="cbackup" prefWidth="75.0" text="backup" />
+            <TableColumn fx:id="cbrowser" prefWidth="75.0" text="browsing" />
+            <TableColumn fx:id="creal" prefWidth="75.0" text="real-time security" />
+            <TableColumn fx:id="canti" prefWidth="75.0" text="anti-spam" />
+            <TableColumn fx:id="cpassword" prefWidth="75.0" text="password" />
+            <TableColumn fx:id="cwifi" prefWidth="75.0" text="wi-fi security" />
+            <TableColumn fx:id="cdata" prefWidth="75.0" text="data loss prevention" />
+        </columns>
+      </TableView>
+      <Label layoutX="436.0" layoutY="122.0" text="Results:" textFill="#a81e1e">
+         <font>
+            <Font name="Courier New Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="export" layoutX="468.0" layoutY="381.0" mnemonicParsing="false" onAction="#export" prefHeight="45.0" prefWidth="159.0" style="-fx-background-color: orange;" text="Export to .csv" textFill="#0d0ab9">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

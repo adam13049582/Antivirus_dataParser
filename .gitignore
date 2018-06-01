@@ -1,0 +1,13 @@
+*.iml
+*.html
+out
+META-INF
+artifacts
+compiler.xml
+encodings.xml
+gradle.xml
+misc.xml
+modules.xml
+uiDesigner.xml
+vcs.xml
+workspace.xml
