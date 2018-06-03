@@ -36,7 +36,7 @@ public class Statistic {
     @FXML private TableColumn<Antivirus,String> chttp;
     @FXML private TableColumn<Antivirus,String> cransomware;
     @FXML private TableColumn<Antivirus,String> cbackup;
-    @FXML private TableColumn<Antivirus,String> cbrowser;
+    @FXML private TableColumn<Antivirus,String> cbrowsing;
     @FXML private TableColumn<Antivirus,String> creal;
     @FXML private TableColumn<Antivirus,String> canti;
     @FXML private TableColumn<Antivirus,String> cpassword;
@@ -89,7 +89,7 @@ public class Statistic {
         chttp.setCellValueFactory(new PropertyValueFactory<Antivirus, String>("http"));
         cransomware.setCellValueFactory(new PropertyValueFactory<Antivirus, String>("ransomware"));
         cbackup.setCellValueFactory(new PropertyValueFactory<Antivirus, String>("backup"));
-        cbrowser.setCellValueFactory(new PropertyValueFactory<Antivirus, String>("browsing"));
+        cbrowsing.setCellValueFactory(new PropertyValueFactory<Antivirus, String>("browsing"));
         creal.setCellValueFactory(new PropertyValueFactory<Antivirus, String>("real"));
         canti.setCellValueFactory(new PropertyValueFactory<Antivirus, String>("anti"));
         cpassword.setCellValueFactory(new PropertyValueFactory<Antivirus, String>("password"));
@@ -122,9 +122,10 @@ listtocsv=new ArrayList<Antivirus>();
         ps = Database.conn.prepareStatement(zapytanie);
         ResultSet rs = ps.executeQuery();
         while(rs.next()) {
+            System.out.println(rs.getString("browsing"));
             anti = new Antivirus(rs.getString("name"), rs.getString("version_of_data"), rs.getString("date"), rs.getString("firewall"), rs.getString("malware"), rs.getString(7),
-                    rs.getString(8), rs.getString("ransomware"), rs.getString(10), rs.getString("backup"), rs.getString(12), rs.getString(13), rs.getString("password"), rs.getString(15), rs.getString(16));
-listtocsv.add(anti);
+                   rs.getString(8), rs.getString("ransomware"), rs.getString("backup"), rs.getString("browsing"), rs.getString(12),rs.getString(13), rs.getString("password"), rs.getString(15), rs.getString(16));
+            listtocsv.add(anti);
             final Antivirus finalAnti = anti;
             Platform.runLater(new Runnable() {
                 @Override
@@ -132,6 +133,7 @@ listtocsv.add(anti);
                     result.getItems().add(finalAnti);
                 }
             });
+
         }
 
     }
