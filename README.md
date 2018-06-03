@@ -7,7 +7,7 @@ then program search this page and all subwebsites of it. If my app find informat
   "Use information" panel is needly when user want to check which antyvirus software  meets certain conditions. He/she has to choose one 
 or more criteria . Data of this programs are showing in table on left.
 
-                                                               How to start.
+                                                               How to start?
                                                               
 1. Download Parser.jar file.
 2. Download Antyviruses.sql file from catalog 'baza'
