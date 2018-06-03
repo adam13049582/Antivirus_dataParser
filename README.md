@@ -12,9 +12,9 @@ or more criteria . Data of this programs are showing in table on left.
 1. Download Parser.jar file.
 2. Download Antyviruses.sql file from catalog 'baza'
 3. Create the database on your PostgreSQL Server.
-Database name: Antyviruses
-User: postgres
-Password: antisoft
+Database name: 'Antyviruses'
+User: 'postgres'
+Password: 'antisoft'
 Use this command in CMD:
      psql -U postgres -c "create database Antyviruses with owner postgres encoding = 'UNICODE';"
 4. Copy data from Antyviruses.sql file.
