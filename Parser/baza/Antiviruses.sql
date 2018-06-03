@@ -65,17 +65,17 @@ COPY public.antivirus_software (id, name, version_of_data, date, firewall, malwa
 5	F-Secure	1	19.05.2018	T	T	T	NA	T	NA	T	T	NA	T	NA	NA
 6	AVG	1	19.05.2018	T	T	NA	NA	T	NA	T	T	NA	T	NA	NA
 9	Avira	1	19.05.2018	NA	T	T	NA	NA	NA	T	T	NA	T	NA	NA
+11	Webroot	1	19.05.2018	NA	T	NA	NA	T	T	T	T	NA	T	NA	NA
 7	Norton	1	19.05.2018	T	T	T	NA	T	T	NA	NA	NA	T	NA	NA
+10	Bitdefender	1	19.05.2018	T	T	T	NA	T	NA	T	T	NA	T	T	NA
 4	IObit	1	19.05.2018	NA	T	NA	NA	T	T	T	T	NA	T	NA	NA
 2	DR WEB	1	19.05.2018	T	T	T	T	T	T	NA	T	T	T	NA	T
 3	Avast	1	19.05.2018	T	T	NA	NA	T	NA	T	T	T	T	T	NA
-13	Comodo	2	19.05.2018	H	H	H	NA	H	H	H	H	H	H	NA	NA
 14	Avast	2	22.05.2018	T	T	NA	NA	T	NA	T	T	T	T	T	NA
 1	Bullguard	1	19.05.2018	T	T	T	NA	T	T	T	NA	NA	T	NA	NA
 8	eScan	1	19.05.2018	T	T	NA	NA	T	NA	NA	T	NA	T	NA	NA
-11	Webroot	1	19.05.2018	NA	H	NA	NA	H	H	H	H	NA	H	NA	NA
 12	Comodo	1	19.05.2018	T	T	T	NA	T	T	T	T	T	T	NA	NA
-10	Bitdefender	1	19.05.2018	H	H	H	NA	H	NA	H	H	NA	H	H	NA
+13	Comodo	2	19.05.2018	T	T	T	NA	T	T	T	T	T	T	NA	NA
 \.
 
 
